@@ -10,23 +10,23 @@ options = ["Piedra", "Papel", "Tijeras"]
 #'Perdiste!'
 def quienGana(player, ai):
     
-    if (player == "Piedra" and ai == "Piedra"):
+    if (player.lower() == "piedra" and ai.lower() == "piedra"):
         return "Empate!"
-    elif (player == "Piedra" and ai == "Papel"):
+    elif (player.lower() == "piedra" and ai.lower() == "papel"):
         return "Perdiste!"
-    elif (player == "Piedra" and ai == "Tijeras"):
+    elif (player.lower() == "piedra" and ai.lower() == "tijeras"):
         return "Ganaste!"
-    elif (player == "Papel" and ai == "Piedra"):
+    elif (player.lower() == "papel" and ai.lower() == "piedra"):
         return "Ganaste!"
-    elif (player == "Papel" and ai == "Papel"):
+    elif (player.lower() == "papel" and ai.lower() == "papel"):
         return "Empate!"
-    elif (player == "Papel" and ai == "Tijeras"):
+    elif (player.lower() == "papel" and ai.lower() == "tijeras"):
         return "Perdiste!"
-    elif (player == "Tijeras" and ai == "Piedra"):
+    elif (player.lower() == "tijeras" and ai.lower() == "piedra"):
         return "Perdiste!"
-    elif (player == "Tijeras" and ai == "Papel"):
+    elif (player.lower() == "tijeras" and ai.lower() == "papel"):
         return "Ganaste!"
-    elif (player == "Tijeras" and ai == "Tijeras"):
+    elif (player.lower() == "tijeras" and ai.lower() == "tijeras"):
         return "Empate!"
 
     
@@ -50,5 +50,3 @@ def Game():
     
     print(winner)
 
-
-Game()

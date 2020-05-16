@@ -13,6 +13,7 @@ class Snake():
 
     # Manejo del pressed [KEYDOWN] de las teclas [K_RIGHT - K_LEFT - K_UP -K_DOWN ]
     def controller(self, event, pygame):
+
         
     # Controla el cambio de  las direcciones
     # Orientaciones
